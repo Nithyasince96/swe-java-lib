@@ -137,7 +137,7 @@ public interface IDateUtils {
         builder.append(ymd[0]);
 
         for (int i = 1; i < ymd.length; i++) {
-            if (separate) builder.append(EN_DASH);
+            if (separate) builder.append(CH_DS);
             if (ymd[i] < i10) builder.append(CH_ZR);
             builder.append(ymd[i]);
         }
