@@ -22,11 +22,11 @@ import static org.swisseph.api.ISweJulianDate.splitTime;
  */
 public interface IDateUtils {
     String F2H_2M = "%02d:%02d";
-    String F4Y_2M_2D = "%4d–%02d–%02d";
+    String F4Y_2M_2D = "%4d-%02d-%02d";
     String F2H_2M_2S = F2H_2M + ":%02d";
     String F2H_2M_2S_MS = F2H_2M_2S + ".%02d";
 
-    String F2H_2M_2H_2M = F2H_2M + " – " + F2H_2M;
+    String F2H_2M_2H_2M = F2H_2M + " - " + F2H_2M;
     String F4Y_2M_2D_2H_2M = F4Y_2M_2D + STR_WS + F2H_2M;
     String F4Y_2M_2D_2H_2M_2S = F4Y_2M_2D + STR_WS + F2H_2M_2S;
     String F4Y_2M_2D_2H_2M_2S_MS = F4Y_2M_2D + STR_WS + F2H_2M_2S_MS;
@@ -148,7 +148,7 @@ public interface IDateUtils {
         builder.append(ymd[0]);
 
         for (int i = 1; i < ymd.length; i++) {
-            if (separate) builder.append(EN_DASH);
+            if (separate) builder.append(CH_DS);
             if (ymd[i] < i10) builder.append(CH_ZR);
             builder.append(ymd[i]);
         }
