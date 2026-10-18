@@ -13,12 +13,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit-jupiter.version>6.0.3</junit-jupiter.version>
-        <maven.compiler.release>8</maven.compiler.release>
+        <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>swisseph</groupId>
+            <groupId>com.github.Nithyasince96</groupId>
             <artifactId>swe-api</artifactId>
             <version>2.10.03j6f</version>
         </dependency>
